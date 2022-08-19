@@ -125,7 +125,6 @@ body {
                 }
                     input {
                         width: 100%;
-                        /* max-width: 400px; */
                         height: 100%;
 
                         border: 1px solid hsl(246, 25%, 77%);
