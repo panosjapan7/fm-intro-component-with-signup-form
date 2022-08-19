@@ -34,14 +34,14 @@
         </div>
         <div class="form-container">
           <form action="#">
-            <input type="text" placeholder="First Name">
-            <!-- <br> -->
-            <input type="text" placeholder="Last Name">
-            <!-- <br> -->
-            <input type="email" name="" id="" placeholder="Email Address">
-            <!-- <br> -->
-            <input type="password" name="" id="" placeholder="Password">
-            <!-- <br> -->
+            <div class="input-container">
+
+              <input class="firstName" type="text" placeholder="First Name">
+            </div>
+            <p class="firstName-error-text">First Name cannot be empty</p>
+            <input class="lastName" type="text" placeholder="Last Name">
+            <input class="email" type="text" placeholder="Email Address">
+            <input class="password" type="password" placeholder="Password">
             <button type="submit">Claim your free trial</button>
           </form>
           <p class="terms">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
@@ -57,5 +57,6 @@
       Coded by <a href="https://www.frontendmentor.io/profile/panosjapan7" target="_blank">Panos</a>.
     </p>
   </footer>
+  <script src="./javascript/index.js"></script>
 </body>
 </html>
