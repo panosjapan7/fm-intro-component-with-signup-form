@@ -39,7 +39,6 @@ body {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        
     }
         .copy-column {
             width: 100%;
@@ -137,7 +136,7 @@ body {
                         max-width: 400px;
                         cursor: pointer;
                         outline: none;
-                        border: none;
+                        border: 1px solid hsl(154, 57%, 42%);
                         background-color: hsl(154, 59%, 51%);
                         border-radius: 5px;
 
@@ -151,6 +150,10 @@ body {
 
                         margin-bottom: 10px;
                     }
+                    button:hover {
+                        background-color: hsl(154, 53%, 61%);
+                        border: none;
+                    }
             .terms {
                 font-size: 10px;
                 color: hsl(246, 25%, 77%);
@@ -162,6 +165,60 @@ body {
                 color: hsl(0, 100%, 74%) ;
                 cursor: pointer;
             }
-footer {
-    margin: 0px 0px 20px 0px;
+    footer {
+        margin: 0px 0px 20px 0px;
+    }
+
+/* MOBILE VIEW */
+@media screen and (max-width: 1000px) {
+body {
+    background-image: url("../images/bg-intro-mobile.png");
+}
+    .page-wrapper {
+        flex-direction: column;
+        padding-right: 30px;
+        padding-left: 30px;
+        margin-bottom: 20px;
+    }
+        .copy-column {
+            width: 100%;
+            height: auto;
+            
+            padding: 0px;
+            margin: 0px;
+            margin-top: 100px;
+            margin-bottom: 50px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+            .headline {
+                font-size: 2rem;
+                line-height: 40px;
+                text-align: center;
+            }
+            .paragraph {
+                max-width: 350px;
+                margin-top: 30px;
+
+                color: white;
+                font-weight: 400;
+                text-align: center;
+            }
+        .form-column {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+
+            padding: 0px;
+        }
+        .blue-banner-container {
+
+            max-width: 600px;
+            min-height: 50px;
+            padding: 20px 70px 20px 70px;
+            margin-bottom: 20px;
+        }
 }
