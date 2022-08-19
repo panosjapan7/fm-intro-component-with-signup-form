@@ -36,28 +36,46 @@ body {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        
+
         background-repeat: no-repeat;
         background-color: hsl(0, 100%, 74%) ;
     }
-        .content-wrapper {
-
+        .copy-column {
+            width: 100%;
+            height: auto;
+            padding-left: 150px;
         }
-            .copy-column {
-
+            .headline {
+                color: white;
+                font-weight: 700;
+                font-size: 3.06rem;
+                line-height: 55px;
             }
-                .headline {
-                    color: white;
-                    font-weight: 700;
-                    font-size: 3.06rem;
-                    line-height: 55px;
-                }
-                .paragraph {
-                    max-width: 500px;
+            .paragraph {
+                max-width: 500px;
+                color: white;
+                font-weight: 400;
+                margin-top: 30px;
+            }
+        .form-column {
+            width: 100%;
+            height: auto;
+        }
+            .blue-banner-container {
+                background-color: hsl(248, 32%, 49%);
+                border-radius: 10px;
+
+                max-width: 500px;
+                height: 50px;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+                .blue-banner-text {
                     color: white;
                     font-weight: 400;
-                    margin-top: 30px;
                 }
-            .form-column {
-
-            }
+                .blue-banner-text span {
+                    font-weight: 600;
+                }
