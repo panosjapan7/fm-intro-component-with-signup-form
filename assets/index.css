@@ -117,8 +117,11 @@ body {
                 }
                 .input-container {
                     width: 100%;
-                    /* max-width: 400px; */
                     position: relative;
+                    margin-bottom: 0px
+                }
+                .input-container.active {
+                    margin-bottom: 20px;
                 }
                     input {
                         width: 100%;
@@ -139,14 +142,41 @@ body {
                             font-weight: 500;
                             font-family: 'Poppins', sans-serif;
                         }
-                    .firstName-error-text {
+                        input:focus {
+                            font-weight: 600;
+                        }
+                        .firstName.active:focus {
+                            color: transparent;
+                        }
+                    .error-icon {
+                        position: absolute;
+                        bottom: 14px;
+                        right: 20px;
+                        width: 20px;
+                        height: 20px;
+                        display: none;
+                    }
+                    .error-icon.active{
+                        display: inline-block;
+                    }
+                    input.active {
+                        border: 1px solid hsl(0, 100%, 74%);
+                    }
+                    
+                    .error-text {
                         margin: 0;
                         padding: 0;
                         position: absolute;
                         text-align: right;
-                        font-size: 11px;
-
+                        color: hsl(0, 100%, 74%);
+                        font-style: italic;
+                        font-size: 10px;
+                        right: 2px;
+                        bottom: -20px;
                         display: none;
+                    }
+                    .error-text.active {
+                        display: inline-block;
                     }
                     button {
                         max-width: 400px;

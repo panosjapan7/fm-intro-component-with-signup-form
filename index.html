@@ -34,14 +34,31 @@
         </div>
         <div class="form-container">
           <form action="#">
+            
             <div class="input-container">
-
-              <input class="firstName" type="text" placeholder="First Name">
+              <input type="text" placeholder="First Name">
+              <img class="error-icon" src="./images/icon-error.svg" alt="error icon">
+              <p class="error-text">First Name cannot be empty</p>
             </div>
-            <p class="firstName-error-text">First Name cannot be empty</p>
-            <input class="lastName" type="text" placeholder="Last Name">
-            <input class="email" type="text" placeholder="Email Address">
-            <input class="password" type="password" placeholder="Password">
+
+            <div class="input-container">
+              <input type="text" placeholder="Last Name">
+              <img class="error-icon" src="./images/icon-error.svg" alt="error icon">
+              <p class="error-text">Last Name cannot be empty</p>
+            </div>
+
+            <div class="input-container">
+              <input type="text" placeholder="Email Address">
+              <img class="error-icon" src="./images/icon-error.svg" alt="error icon">
+              <p class="error-text">Looks like this is not an email</p>
+            </div>
+
+            <div class="input-container">
+              <input type="password" placeholder="Password">
+              <img class="error-icon" src="./images/icon-error.svg" alt="error icon">
+              <p class="error-text">Password cannot be empty</p>
+            </div>
+
             <button type="submit">Claim your free trial</button>
           </form>
           <p class="terms">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
